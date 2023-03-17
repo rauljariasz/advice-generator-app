@@ -1,0 +1,80 @@
+@import "vars";
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  background-color: $bg;
+  font-family: "Manrope", sans-serif;
+}
+.patternDesktop {
+  display: none;
+}
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.cardContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 345px;
+  height: 315px;
+  background-color: $bgCard;
+  padding: 45px 25px 60px;
+  border-radius: 10px;
+  &__h1 {
+    color: $neon;
+    font-size: 1rem;
+    letter-spacing: 4px;
+  }
+  &__p {
+    color: $primary-color;
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  &__button {
+    width: 65px;
+    height: 65px;
+    border: none;
+    outline: none;
+    background-color: $neon;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -32px;
+    cursor: pointer;
+    transition: all 0.4s;
+    &:hover {
+      box-shadow: 2px 2px 40px 1px rgba(82, 255, 168, 1);
+      -webkit-box-shadow: 2px 2px 40px 1px rgba(82, 255, 168, 1);
+      -moz-box-shadow: 2px 2px 40px 1px rgba(82, 255, 168, 1);
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: $primary-color;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 700px) {
+  .patternMobile {
+    display: none;
+  }
+  .patternDesktop {
+    display: block;
+  }
+  .cardContainer {
+    width: 540px;
+    padding: 50px 50px 65px;
+  }
+}
