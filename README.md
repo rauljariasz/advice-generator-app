@@ -56,4 +56,4 @@ My focus for future projects will be API consumption.
 
 - Website - [Portfolio](https://rauljariasz.github.io/portfolio/)
 - Frontend Mentor - [@rauljariasz](https://www.frontendmentor.io/profile/rauljariasz)
-- Twitter - [@rauljariasz](https://www.instagram.com/rauljariasz)
+- Instagram - [@rauljariasz](https://www.instagram.com/rauljariasz)
