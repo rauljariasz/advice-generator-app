@@ -10,8 +10,8 @@ import random from './assets/icon-dice.svg';
 
 const App = () => {
   const API = 'https://api.adviceslip.com/advice'
-  const [number, setNumber] = useState(null)
-  const [advice, setAdvice] = useState('')
+  const [number, setNumber] = useState()
+  const [advice, setAdvice] = useState()
 
   function callApi(api) {
     fetch(api)
@@ -34,8 +34,8 @@ const App = () => {
     <>
       <main className='main'>
         <div className='cardContainer'>
-          <h1 className='cardContainer__h1'>ADVICE #{number}</h1>
-          <p className='cardContainer__p'>❝{advice}❞</p>
+          {number && <h1 className='cardContainer__h1'>ADVICE #{number}</h1>}
+          {advice && <p className='cardContainer__p'>{advice}</p>}
           <img className='patternMobile' src={patternMobile} alt='Divider' />
           <img className='patternDesktop' src={patternDesktop} alt='Divider' />
           <button className='cardContainer__button' onClick={handdleClick}>
